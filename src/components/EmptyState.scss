@@ -1,0 +1,10 @@
+@import "../styles/variables";
+
+.header {
+  font-size: $header-font-family;
+  font-weight: $header-font-weight;
+}
+
+.text {
+  color: $primary-color;
+}

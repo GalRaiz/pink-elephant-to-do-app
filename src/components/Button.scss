@@ -1,0 +1,35 @@
+@import "../styles/variables";
+
+$button-types: (
+  primary: $button-primary-bg,
+  secondary: $button-secondary-bg,
+  tertiary: $button-tertiary-bg,
+);
+
+.btn {
+  color: $button-color;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  font-size: $h6-font-size;
+  border: 0;
+  transition: 0.2s;
+
+  &:hover {
+    font-weight: bold;
+    transform: translateY(-$padding-xs);
+    box-shadow: $padding-xs $padding-xs lightgray;
+  }
+
+  @each $type, $color in $button-types {
+    &.#{$type} {
+      background-color: $color;
+    }
+  }
+  &.primary {
+    color: $text-inverse;
+  }
+
+  &.tertiary {
+    border: 2px solid $border-color;
+  }
+}

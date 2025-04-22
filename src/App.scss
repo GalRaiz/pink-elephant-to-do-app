@@ -1,0 +1,58 @@
+@import "./styles/variables.scss";
+
+.App {
+  background-color: $background-color;
+  color: $text-primary;
+  font-family: $text-font-family-body;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .App-logo-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: $padding-small;
+    .App-logo {
+      width: 400px;
+      height: auto;
+    }
+  }
+
+  .App-header {
+    display: flex;
+    padding: $padding-medium;
+    background-color: $primary-color;
+    color: $text-inverse;
+    width: 100%;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    justify-content: center;
+    h1 {
+      font-family: $title-font-family;
+      font-size: $h1-font-size;
+      font-weight: $header-font-weight;
+      text-shadow: 2px 2px $text-secondary;
+    }
+  }
+
+  .App-search-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: $padding-medium;
+  }
+
+  .user-list-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: $padding-medium;
+    .user-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: $padding-medium;
+      width: 100%;
+    }
+  }
+}

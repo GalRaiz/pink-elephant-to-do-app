@@ -1,0 +1,118 @@
+@import "../styles/variables.scss";
+
+// Modal Overlay
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Modal Card
+.modal-card {
+  background-color: $background-color;
+  padding: $padding-medium;
+  border-radius: $border-radius;
+  height: 80%;
+  width: 70%;
+  overflow-y: auto;
+  box-shadow: $box-shadow;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .modal-title {
+    font-size: $h3-font-size;
+    font-family: $title-font-family;
+    color: $text-primary;
+    text-align: center;
+  }
+}
+
+// Close Button (Top Right)
+.modal-close-btn {
+  position: absolute;
+  top: $padding-normal;
+  right: $padding-small;
+  border: none;
+  background: none;
+  font-size: $h3-font-size;
+  cursor: pointer;
+  color: $secondary-color;
+}
+
+.modal-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-tab-btn {
+  padding: $padding-small $padding-normal;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+
+  &.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+// Modal Content
+.modal-list {
+  list-style: none;
+  width: 100%;
+}
+
+// Todos List
+.modal-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+
+  .todo-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+// Posts List
+.post-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+
+  .post-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .post-body {
+    font-size: 14px;
+    color: #333;
+  }
+}
+
+// Error Message
+.error-text {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
