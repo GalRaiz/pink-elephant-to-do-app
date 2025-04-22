@@ -15,9 +15,8 @@ $button-types: (
   transition: 0.2s;
 
   &:hover {
+    cursor: pointer;
     font-weight: bold;
-    transform: translateY(-$padding-xs);
-    box-shadow: $padding-xs $padding-xs lightgray;
   }
 
   @each $type, $color in $button-types {
