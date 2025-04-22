@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+🐘 Pink Elephant To-Do App
+A sleek and intuitive to-do list application built with React, TypeScript, and Vite. Stay organized and boost your productivity with this minimalist task manager.​
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Replace with actual screenshot path -->
 
-Currently, two official plugins are available:
+✨ Features
+Add, edit, and delete tasks effortlessly
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mark tasks as completed to track progress
 
-## Expanding the ESLint configuration
+Responsive design for seamless use across devices
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Real-time updates with Vite's Hot Module Replacement (HMR)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Clean and maintainable codebase with ESLint integration​
+Bomberbot
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🚀 Getting Started
+Prerequisites
+Ensure you have the following installed:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Node.js (v14 or later)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+npm or Yarn​
+
+Installation
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/GalRaiz/pink-elephant-to-do-app.git
+cd pink-elephant-to-do-app
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+
+# or
+
+yarn install
+Start the development server:
+
+bash
+Copy
+Edit
+npm run dev
+
+# or
+
+yarn dev
+Open your browser and navigate to:
+
+arduino
+Copy
+Edit
+http://localhost:5173
+🛠️ Technologies Used
+React
+
+TypeScript
+
+Vite
+
+ESLint
