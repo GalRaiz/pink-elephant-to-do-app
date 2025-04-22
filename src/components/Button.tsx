@@ -6,7 +6,7 @@ interface ButtonProps {
   size?: "small" | "medium" | "large";
   disabled?: boolean;
   btnText: string;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent) => void;
 }
 
 const Button: React.FC<ButtonProps> = ({ type, btnText, onClick }) => {

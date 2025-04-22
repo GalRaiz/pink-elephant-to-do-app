@@ -77,23 +77,46 @@ const Card: React.FC<CardProps> = (props) => {
             <Button
               type="primary"
               btnText="View Details"
-              onClick={() => console.log("Gal's console: ", props)}
+              onClick={(e: React.MouseEvent) => {
+                e.stopPropagation();
+                console.log("Gal's console: ", props);
+              }}
             />
             <Button
               type="secondary"
               btnText="Edit"
-              onClick={() => setIsEditing(true)}
+              onClick={(e: React.MouseEvent) => {
+                e.stopPropagation();
+                setIsEditing(true);
+              }}
             />
             <Button
               type="tertiary"
               btnText="Delete"
-              onClick={() => console.log("Gal's console: ", props)}
+              onClick={(e: React.MouseEvent) => {
+                e.stopPropagation();
+                console.log("Gal's console: ", props);
+              }}
             />
           </>
         ) : (
           <>
-            <Button type="primary" btnText="Save" onClick={handleSave} />
-            <Button type="secondary" btnText="Cancel" onClick={handleCancel} />
+            <Button
+              type="primary"
+              btnText="Save"
+              onClick={(e: React.MouseEvent) => {
+                e.stopPropagation();
+                handleSave();
+              }}
+            />
+            <Button
+              type="secondary"
+              btnText="Cancel"
+              onClick={(e: React.MouseEvent) => {
+                e.stopPropagation();
+                handleCancel();
+              }}
+            />
           </>
         )}
       </div>
