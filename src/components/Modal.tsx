@@ -92,7 +92,7 @@ const Modal: React.FC<ModalProps> = ({
           </button>
         </div>
         <h2 className="modal-title">{title}</h2>
-        {todosData.length || postsData.length ? (
+        {todosData.length > 0 || postsData.length > 0 ? (
           renderModalContent()
         ) : (
           <p className="error-text">Error: {error}</p>

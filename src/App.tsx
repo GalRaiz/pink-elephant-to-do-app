@@ -23,6 +23,16 @@ const App = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
 
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -65,6 +75,9 @@ const App = () => {
     <div className="App">
       <div className="App-logo-container">
         <img src={PinkELogo} className="App-logo" alt="Pink Elephant Logo" />
+        <button onClick={toggleTheme}>
+          Switch to {theme === "light" ? "Dark" : "Light"} Mode
+        </button>
       </div>
 
       {loading ? (

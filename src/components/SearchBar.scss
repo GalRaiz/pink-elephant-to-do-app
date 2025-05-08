@@ -5,9 +5,12 @@
   display: flex;
   align-items: center;
   width: 400px;
-  border-bottom: 2px solid $primary-color;
+  border-bottom: 2px solid var(--primary-color);
+  transition: width 0.3s ease-in-out;
+
   &:focus-within {
     width: 800px;
+
     .search-icon {
       transform: rotate(90deg);
     }
@@ -18,19 +21,18 @@
   flex: 1;
   border: none;
   outline: none;
-  padding: $padding-small;
-  font-size: $h6-font-size;
+  padding: var(--padding-small);
+  font-size: var(--h6-font-size);
   background: transparent;
+  color: var(--text-color);
+
   &::placeholder {
-    color: $text-muted;
+    color: var(--text-muted);
   }
 }
 
 .search-icon {
-  font-size: $h6-font-size;
+  font-size: var(--h6-font-size);
+  color: var(--text-secondary);
   transition: transform 0.4s ease-in-out;
-}
-
-.search-bar-container.focused .search-icon {
-  transform: rotate(90deg);
 }

@@ -1,9 +1,9 @@
 @import "./styles/variables.scss";
 
 .App {
-  background-color: $background-color;
-  color: $text-primary;
-  font-family: $text-font-family-body;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: var(--text-font-family-body);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,8 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: $padding-small;
+    padding: var(--padding-small);
+
     .App-logo {
       width: 400px;
       height: auto;
@@ -21,18 +22,19 @@
 
   .App-header {
     display: flex;
-    padding: $padding-medium;
-    background-color: $primary-color;
-    color: $text-inverse;
+    padding: var(--padding-medium);
+    background-color: var(--primary-color);
+    color: var(--text-inverse);
     width: 100%;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
     justify-content: center;
+
     h1 {
-      font-family: $title-font-family;
-      font-size: $h1-font-size;
-      font-weight: $header-font-weight;
-      text-shadow: 2px 2px $text-secondary;
+      font-family: var(--title-font-family);
+      font-size: var(--h1-font-size);
+      font-weight: var(--header-font-weight);
+      text-shadow: 2px 2px var(--text-secondary);
     }
   }
 
@@ -40,18 +42,19 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: $padding-medium;
+    padding: var(--padding-medium);
   }
 
   .user-list-container {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: $padding-medium;
+    padding: var(--padding-medium);
+
     .user-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: $padding-medium;
+      gap: var(--padding-medium);
       width: 100%;
     }
   }

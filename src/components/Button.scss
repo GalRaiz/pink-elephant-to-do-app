@@ -1,34 +1,50 @@
 @import "../styles/variables";
 
-$button-types: (
-  primary: $button-primary-bg,
-  secondary: $button-secondary-bg,
-  tertiary: $button-tertiary-bg,
-);
-
 .btn {
-  color: $button-color;
-  padding: $button-padding;
-  border-radius: $button-border-radius;
-  font-size: $h6-font-size;
-  border: 0;
-  transition: 0.2s;
+  color: var(--button-text-color);
+  background-color: var(--button-bg-default);
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  font-size: var(--h6-font-size);
+  border: none;
+  transition: background-color 0.2s, font-weight 0.2s;
+  display: inline-block;
 
   &:hover {
     cursor: pointer;
     font-weight: bold;
   }
 
-  @each $type, $color in $button-types {
-    &.#{$type} {
-      background-color: $color;
-    }
-  }
   &.primary {
-    color: $text-inverse;
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+  }
+
+  &.secondary {
+    background-color: var(--button-secondary-bg);
+    color: var(--button-secondary-text);
   }
 
   &.tertiary {
-    border: 2px solid $border-color;
+    background-color: transparent;
+    color: var(--button-tertiary-text);
+    border: 2px solid var(--button-border-color);
+  }
+
+  &.small {
+    font-size: var(--font-size-small);
+    padding: var(--padding-small);
+  }
+
+  &.large {
+    font-size: var(--font-size-large);
+    padding: var(--padding-large);
+  }
+
+  &:disabled {
+    background-color: var(--button-disabled-bg);
+    color: var(--button-disabled-text);
+    cursor: not-allowed;
+    opacity: 0.6;
   }
 }
