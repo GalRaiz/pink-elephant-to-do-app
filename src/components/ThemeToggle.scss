@@ -1,0 +1,17 @@
+.icon-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--text-color);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    outline: none;
+    transform: scale(1.2);
+  }
+}

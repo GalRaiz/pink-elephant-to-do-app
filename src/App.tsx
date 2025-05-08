@@ -9,6 +9,7 @@ import PinkElephantLoader from "./components/Loader.tsx";
 import SearchBar from "./components/SearchBar.tsx";
 import Button from "./components/Button.tsx";
 import EmptyState from "./components/EmptyState.tsx";
+import ThemeToggle from "./components/ThemeToggle";
 
 const USERS_URL = "https://jsonplaceholder.typicode.com/users";
 const TODOS_URL = "https://jsonplaceholder.typicode.com/todos";
@@ -22,16 +23,6 @@ const App = () => {
   const [selectedUser, setSelectedUser] = useState<IUser | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
-
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,9 +66,7 @@ const App = () => {
     <div className="App">
       <div className="App-logo-container">
         <img src={PinkELogo} className="App-logo" alt="Pink Elephant Logo" />
-        <button onClick={toggleTheme}>
-          Switch to {theme === "light" ? "Dark" : "Light"} Mode
-        </button>
+        <ThemeToggle />
       </div>
 
       {loading ? (
