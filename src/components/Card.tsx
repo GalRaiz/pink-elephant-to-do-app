@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Card.scss";
+import "./Card.css";
 import Button from "./Button";
 
 interface IUserCardProps {

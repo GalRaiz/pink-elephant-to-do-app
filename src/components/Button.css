@@ -1,4 +1,4 @@
-@import "../styles/variables";
+@import "../styles/_variables.css";
 
 .btn {
   color: var(--button-text-color);

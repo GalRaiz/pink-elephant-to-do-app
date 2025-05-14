@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./App.scss";
+import "./App.css";
 import PinkELogo from "./assets/pinkeE-horizontal.svg";
 import { IUser, ITodo, IPost } from "../src/store/types.ts";
 import Card from "./components/Card.tsx";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Loader.scss";
+import "./Loader.css";
 import PinkElephant from "../assets/elephant.svg";
 
 // const sentences = [

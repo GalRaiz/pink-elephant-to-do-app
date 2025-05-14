@@ -1,10 +1,10 @@
 🐘 Pink Elephant To-Do App
 A sleek and intuitive to-do list application built with React, TypeScript, and Vite. Stay organized and boost your productivity with this minimalist task manager.​
 
-<!-- Replace with actual screenshot path -->
-
 ✨ Features
 Add, edit, and delete tasks effortlessly
+
+View and add posts
 
 Mark tasks as completed to track progress
 

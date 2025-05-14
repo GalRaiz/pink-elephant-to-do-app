@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.scss";
+import "./Button.css";
 
 interface ButtonProps {
   type: "primary" | "secondary" | "tertiary";

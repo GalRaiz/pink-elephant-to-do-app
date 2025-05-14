@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Modal.scss";
+import "./Modal.css";
 import { IPost, ITodo } from "../store/types.ts";
 import Button from "./Button.tsx";
 

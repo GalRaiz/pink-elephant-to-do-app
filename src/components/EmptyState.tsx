@@ -1,5 +1,5 @@
 import PinkElephant from "../assets/elephant.svg";
-import "./EmptyState.scss";
+import "./EmptyState.css";
 
 const EmptyState = () => {
   return (

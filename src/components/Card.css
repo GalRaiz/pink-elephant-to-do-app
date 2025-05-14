@@ -1,3 +1,5 @@
+@import "../styles/_variables.css";
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -16,11 +18,11 @@
   border: 1px solid transparent;
 
   &.completed {
-    border-color: #159015; // Green border for completed tasks
+    border-color: #159015; /* Green border for completed tasks */
   }
 
   &.not-completed {
-    border-color: #d9534f; // Red border for incomplete tasks
+    border-color: #d9534f; /* Red border for incomplete tasks */
   }
 }
 .card:hover {

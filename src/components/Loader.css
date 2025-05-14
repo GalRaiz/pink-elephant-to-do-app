@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import "../styles/variables.scss";
+@import "../styles/_variables.css";
 
 .loader-container {
   position: fixed;
